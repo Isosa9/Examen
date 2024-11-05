@@ -7,9 +7,11 @@ class Listatarea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Lista de Tareas')),
+      appBar: AppBar(title: const Text('Tareas CEUTEC ')),
       body: const Center(
-        child: Text('Aquí va la lista de tareas.'),
+        child: Text('Foro.'
+            'Tarea'
+            'Examen'),
       ),
     );
   }
