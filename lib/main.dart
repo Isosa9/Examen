@@ -12,8 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Aplicación con Drawer',
-      routerConfig: router,
-    );
+        title: 'Material App',
+        home: Scaffold(
+            appBar: AppBar(
+              title: Text('Mostrarimagenes'),
+            ),
+            body: center(
+                child: Column(
+              children: [],
+            ))));
   }
 }
