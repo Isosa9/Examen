@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'router.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Newns());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class News extends StatelessWidget {
+  const News({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,19 @@ class MyApp extends StatelessWidget {
             ),
             body: center(
                 child: Column(
-              children: [],
+              children: [
+                SizedBox(
+                  height: 250.0,
+                  width: 350.0,
+                  child: Image.aseesimagenes(Noticia.png),
+                ),
+                 SizedBox(
+                  height: 250.0,
+                  width: 350.0,
+                  child: Image.network(
+                    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fhumanidades.com%2Fnoticia%2F&psig=AOvVaw2H0kdipZ_JmG-l1qjiHIb8&ust=1730861770169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCZx9qYxIkDFQAAAAAdAAAAABAI'
+                  )
+              ],
             ))));
   }
 }
